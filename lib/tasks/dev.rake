@@ -48,7 +48,7 @@ namespace :dev do
 		
 		Contact.all.each do |contact|
 			
-			address = Address.create!(
+			Address.create!(
 				street: Faker::Address.street_address, 
 				city: Faker::Address.city,
 				contact: contact
